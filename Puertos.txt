@@ -1,0 +1,6 @@
+https://support.apple.com/es-lamr/HT202944
+https://www.ionos.es/digitalguide/servidores/know-how/puertos-tcp-puertos-udp/
+https://planificacionadministracionredes.readthedocs.io/es/latest/Tema11/Teoria.html
+
+Puertos mas completos en este link
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers

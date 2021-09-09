@@ -1,0 +1,212 @@
+INTRODUCCIÓN Y MEDIOS GUIADOS
+
+Capa fisica
+
+-Enlaces de comunicacion
+	*Medios de transmision
+		+Medios guiados
+
++Medios guiados
+Tiene que ver con la transmision de bits
+por un canal de comunicaciones
+
+En el diseño se debe garantizar que un 1 es un 1
+en origen y en destino, voltajes, quien hable
+primero, duplex, simplex, como y cuando 
+conectarse o desconectarse
+
+Depende del medio de transmision
+
+Guiados
+-Coaxial
+-TP
+-Fibra óptica
+
+No guiados
+-Radio terrestre
+-Radio satelital
+-Celular
+
+-*Medios de transmision Guiados
+
+-TP: Cobre-Pares trenzados
+--Tipos
+	*UTP(Unshielded Twisted Pair)
+	*FTP(Foiled Twisted Pair)
+	*STP(Shielded Twisted Pair)
+-Par trenzado, no blindado, blindaje general y blindaje
+-Es mas barato y facil de manejar
+-En categoria 5, velocidad de hasta 150 Mps
+-En categoria 6 y 7, hasta 100 Gbps
+-Es el mas usado en cableado estructurado
+-Facil manipulacion
+
+Quieren anular los campos electromagneticos entrochando
+
+--Cable coaxial
+-Se compone de dos conductores
+	*Interno o central: Alambre de cobre grueso(a)
+	*Externo: Malla metalica
+-Los dos conductores estan separados por capa de aislamiento 
+y tiene recubrimiento de plastico
+
+Dos tipos de coaxial
+	*Grueso 50 ohmios
+	*Delgado 75 ohmios
+Conectores: Permiten interconectar dos segmentos de cable. Para
+cable coaxial existen varios tipos
+	*Conector tipo T
+		Permiten derivar la señal con un conector de 3 salidas
+	*Conector vampiro
+		Se pasa el cable por la mitad y se cierra y poncha el cable con una 
+		aguja
+	*BNC
+
+--Fibra optica
+*Señal en forma de pulsos luminosos
+*Un transductor convierte señal electrica a pulsos de luz usando LED
+ o LaserDiode, en el emisor
+*En el receptor se hace el proceso contrario, usando un diodo fotoelectrico
+*Menor atenuacion-->Es desgaste de la señal debido al roce con el medio fisico
+DEFINICION:
+atenuacion-->Es desgaste de la señal debido al roce con el medio fisico
+
+*Se tiene que poner dos fibra , una que emita y otra que reciba
+**Un telefono es un ejemplo de transductor
+**Otro ejemplo Un micrófono es un transductor electroacústico
+**Una pantalla de ordenador es también un transductor fotoeléctrico
+*La fibra optica no es suceptible a ruido electrico
+DEFINICION:
+Un transductor es un dispositivo capaz de transformar 
+o convertir una determinada manifestación de energía de entrada, 
+en otra diferente de salida, pero de valores muy pequeños en términos 
+relativos con respecto a un generador.
+
+Dos tipos de fibra optica
+*Multimodal
+	+Nucleo de 50 micrometros. Usa LED
+	+Los pulsos tiene muchos "modos" o caminos
+	+Los pulsos llegan deformados
+	+Requiere repetidores para corregir
+	+Los fotones rebotan contra las paredes del cable
+*Monomodal
+	+Diametro del nucleo menos menos de 5 micrometros
+	+Usa LD
+	+Los pulsos llegan mas sincronizadamente
+	+Pueden tener tramos mas grandes sin repetidor
+	+Velocidades cada vez mayores (Gbps)
+ISP: Proovedor de internet (claro, etb, etc..)
+Ejemplos:
+	Cable submarino
+----------------------------------------------
+	       |Par Trenzado     |Coaxial |Fibra O |
+---------|-----------------|--------|--------|
+Costo	   |Bajo             |UP      |UP	     |
+	       |Facil instalacion|UP	    |UP      |
+	       |y cambios        |        |        |
+	       |Poco volumen     |UP      |UP      |
+---------|-----------------|--------|--------|
+Capacidad|Gbpd		   |500 Mbps|Gbps    |
+---------|-----------------|--------|--------| 
+Desempeño|      1x10^-5    | 1x10^-6|1x10^-11|
+---------|-----------------|--------|--------| 
+Distancia|2-3 km(100 mts)  | 2-3 Km |16 - 200|
+         |		             |	      |Km      |	
+---------|-----------------|--------|--------|
+Seguridad|Baja             |UP      |UP      |
+---------|-----------------|--------|--------|
+
+Cableado estructurado
+-Cables + Accesorios + Dispositivos de interconexion + administracion
+-Para conexion de equipos y transporte de informacion para largo tiempo
+--Caracteristicas
+	*Confiable
+	*Capacidad de habilitar facilmente los servicios de telecomunicacions
+	*Flexibilidad para reconfiguracion
+	*Facil implementacion de nueva tecnologia
+	*Uso de estandares
+	*Modularidad
+	*Administrable
+	*Ser un sistema abierto
+Estandarizacion
+ANSI/TIA/EIA
+	*Definieron como se diseñaba las partes del cableado
+		+manufactura
+		+instalacion y rendimiento
+	* ANSI/TIA/EIA-568-A, Estandar de cableado de telecomunicaciones en
+	 edificios comerciales.
+
+-ANSI/TIA/EIA-568-A
+	*Requerimientos minimos
+	*Topologia
+	*Vida util 10 años
+-Componentes
+	*Area de trabajo
+		+Son los componentes que van desde la toma o faceplate, hasta la
+		 terminal(Telefono, computador, etc)
+		+Equipos de usuario
+			*+Se interconectan a los enchufes
+		+Patch core para conectar equipos
+		 RJ45
+		+Existen dos estandares para la conexion de cables cruzados
+			*+ T5698A y T568B
+				*+*Cuando uno necesita un cable cruzado una punta
+				   568B y otra punta 568A
+	*Cableado Horizontal
+		+Conjunto de elementos que unen el área de trabajo con el centro
+		 de cables del piso
+		+Topologia en estrella
+		+Generalmente el proceso de instalacion de este es el mas complejo
+		 porque requiere moverse por los edificios
+		+Distancia estacion de cableado y todos los cables menos de 100 metros
+	*Closet de telecomunicaciones
+		+Cuarto de telecomunicaciones
+		+Rac: Elemento metalico
+		+Elementos
+			*+Racks
+			*+Sistema de proteccion de picos
+			*+Elementos activos(Hubs,switches,etc)
+			*+Patch panel, a donde llega la salida de informacion			
+	*Backborne interno
+		+Cableado vertical
+		+Manera como se conecta un closet de telecomunicaciones
+		+Funcion
+			*+La funcion del cableado vertical es la interconexion
+			  de los diferentes armarios de telecomunicaciones, cuarto
+			  de equipos y medios de entrada
+		+Topologia
+			*+Debe ser tipicamente una estrella
+		+Maneras de interconectarlo
+			*+Van a traves de Tuberia o bandejas
+			*+Backbone en estrella
+			*+Backbone en anillo
+			*+Backbone en combinacion de los dos anteriores
+		
+	*Cuarto de maquinas
+		+Centro de cables especial
+		+Donde van los isp entregan la interconexion
+	*Backborne del campus
+		+Manera como se conecta diferentes edificios de telecomunicaciones
+		+Formas de ponerlo
+			*+Enterrado
+			*+Aereo
+			*+Subterraneo	
+	*Cuando se esta pensando en un proyecto de cableado estructurado se 
+	 debe pensar en
+		+Diseño
+		+Instalacion
+		+Gerencia de proyecto
+		+Mantenimiento
+		+Documentacion
+		+Entrenamiento
+		+Pruebas
+			*+Continuidad
+			*+Atenuacion
+			*+Relacion señal ruido
+			*+Ruido ambiental
+			*+Longitud del cableado
+			*+Aparato usado: Penta-scanner
+		+Certificacion
+
+
+
